@@ -57,3 +57,4 @@ exports.help = {
   description: 'Kanalı istediğiniz kadar süreyle kitler.',
   usage: 'kilit <süre>'
 };
+//izexlesh

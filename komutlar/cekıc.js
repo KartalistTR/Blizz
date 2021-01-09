@@ -23,3 +23,4 @@ exports.help = {
   description: 'İstediğiniz Kişiye Çekiç Atarsınız.',
   usage: 'çekiç'
 };
+//izexlesh

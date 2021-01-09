@@ -43,3 +43,4 @@ exports.help = {
   description: 'Mesajınızı emoji haline getirir',
   usage: 'emojiyazı <mesaj>'
 };
+//izexlesh

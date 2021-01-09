@@ -152,3 +152,4 @@ exports.help = {
   description: 'İstediğiniz şeyi bota yazdırır.',
   usage: 'havadurumu [duyuru]'
 };
+//izexlesh

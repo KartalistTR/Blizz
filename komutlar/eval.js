@@ -37,3 +37,4 @@ exports.help = {
   description: 'Kod denemek için kullanılır.',
   usage: 'eval [kod]'
 };
+//izexlesh

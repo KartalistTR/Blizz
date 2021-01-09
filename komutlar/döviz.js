@@ -27,3 +27,4 @@ exports.help = {
   description: 'döviz',
   usage: 'döviz'
 };
+//izexlesh

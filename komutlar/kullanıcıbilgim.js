@@ -33,3 +33,4 @@ exports.help = {
   description: 'Komutu kullanan kişi hakkında bilgi verir.',
   usage: 'kullanıcıbilgim'
 };
+//izexlesh

@@ -30,3 +30,4 @@ exports.help = {
   description: 'Send a Minecraft Achievement image to the channel',
   usage: 'mcödül Title|Text (/achievement Achievement Get|Used a Command!)'
 };
+//izexlesh

@@ -25,3 +25,4 @@ exports.run = async (client, msg, args) => {
    description: 'AFK  Kalırsınız',
    usage: 'afk'
  };
+//izexlesh

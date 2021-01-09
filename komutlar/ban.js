@@ -42,3 +42,4 @@ exports.help = {
   description: 'İstediğiniz kişiyi banlar.',
   usage: 'ban [kullanıcı] [sebep]'
 };
+//izexlesh

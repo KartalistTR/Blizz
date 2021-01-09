@@ -29,3 +29,4 @@ exports.help = {
   description: 'Botun davet linkini gönderir.',
   usage: 'davet'
 };
+//izexlesh

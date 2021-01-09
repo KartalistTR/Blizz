@@ -132,3 +132,4 @@ exports.run = async (client, msg, args) => {
     description: 'Aşk Ölçmeni sağlar.',
     usage: 'aşkölçer'
    }
+//izexlesh

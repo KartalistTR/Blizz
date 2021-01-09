@@ -27,3 +27,4 @@ exports.help = {
   description: "Shows all the servers the bot is in.",
   usage: "ailemiz"
 };
+//izexlesh

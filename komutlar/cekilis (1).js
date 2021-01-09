@@ -22,3 +22,4 @@ exports.help = {
   description: 'çekiliş Yapar.',
   usage: 'çekiliş'
 };
+//izexlesh

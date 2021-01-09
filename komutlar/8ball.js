@@ -31,3 +31,4 @@ exports.help = {
   description: 'Sihirli 8ball sorularınızı cevaplar',
   usage: '8ball <soru>'
 };
+//izexlesh

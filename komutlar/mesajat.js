@@ -36,3 +36,4 @@ exports.help = {
   description: 'Bir kullanÄ±cÄ±ya Ã¶zel mesaj yollar.',
   usage: 'mesajat'
 };
+//izexlesh

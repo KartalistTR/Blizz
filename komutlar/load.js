@@ -24,3 +24,4 @@ exports.help = {
   description: 'Yeni eklenen komutu yükler.',
   usage: 'load <komut adı>'
 };
+//izexlesh

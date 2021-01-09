@@ -40,3 +40,4 @@ exports.help = {
   description: 'İstediğiniz kişiyi sunucudan atar.',
   usage: 'kick [kullanıcı] [sebep]'
 };
+//izexlesh
