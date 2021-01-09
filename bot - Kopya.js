@@ -14,27 +14,27 @@ client.on('message', msg => {
   if (msg.author.bot) return;
 
   if (!msg.content.startsWith(prefix)) {
-	  return;
+      return;
   }
   if (msg.content.toLowerCase() === prefix + 'ping') {
-    msg.reply('Pong! **' + client.ping + '** ms');
+    msg.reply('Pong! **' + client.ws.ping + '** ms');
   }
   if (msg.content.toLowerCase() === prefix + 'sa') {
     msg.reply('Aleyküm selam!');
   }
   if (msg.content.toLowerCase() === prefix + 'yaz') {
     msg.delete();
-    msg.channel.sendMessage(msg.content);
+    msg.channel.send(msg.content);
   }
   if (msg.content.toLowerCase() === prefix + 'temizle') {
     msg.channel.bulkDelete(100);
-    msg.channel.sendMessage("100 adet mesaj silindi! (Emirhan Saraç)");
+    msg.channel.send("100 adet mesaj silindi! (Emirhan Saraç)");
   }
   if (msg.content.toLowerCase() === prefix + 'reboot') {
     if (msg.author.id !== ayarlar.sahip) {
       msg.reply('Benim yapımcım değilsin!');
     } else {
-      msg.channel.sendMessage(`Bot yeniden başlatılıyor...`).then(msg => {
+      msg.channel.send(`Bot yeniden başlatılıyor...`).then(msg => {
       console.log(`BOT: Bot yeniden başlatılıyor...`);
       process.exit(0);
     })
