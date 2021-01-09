@@ -10,7 +10,7 @@ request('https://www.doviz.com/api/v1/currencies/EUR/latest', function (error, r
     if (error) return console.log('Hata:', error); 
     else if (!error) { 
         var euro = JSON.parse(body);
-      message.channel.sendEmbed(new Discord.RichEmbed().setDescription(`Dolar satış: ${info.selling} TL \nDolar alış: ${info.buying} TL \n\nEuro satış: ${euro.selling} TL \nEuro alış: ${euro.buying} TL`).setFooter('doviz.com alt yapısı kullanılarak hazırlanmıştır.').setColor("RED"));    }
+      message.channel.send(new Discord.MessageEmbed().setDescription(`Dolar satış: ${info.selling} TL \nDolar alış: ${info.buying} TL \n\nEuro satış: ${euro.selling} TL \nEuro alış: ${euro.buying} TL`).setFooter('doviz.com alt yapısı kullanılarak hazırlanmıştır.').setColor("RED"));    }
 })
     }
 })

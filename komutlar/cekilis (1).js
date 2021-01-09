@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 exports.run = (bot, message , args) => {
    let mesaj = args.slice(0).join(' ');
    if (mesaj.length < 1) return message.reply('Ne çekilişi olucak onuda yazman lazım.');
-   const embed = new Discord.RichEmbed()
+   const embed = new Discord.MessageEmbed()
   .setColor("#36393F")
   .addField('Ödül' , `${mesaj}`)
   .addField('Kazanan:', `${message.guild.members.random().displayName}`)

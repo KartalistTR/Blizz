@@ -3,18 +3,18 @@ const client = new Discord.Client();
 
 exports.run = (client, message) => {
   if (message.channel.type !== 'dm') {
-    const ozelmesajkontrol = new Discord.RichEmbed()
+    const ozelmesajkontrol = new Discord.MessageEmbed()
     .setColor(0x00AE86)
     .setTimestamp()
-    .setAuthor(message.author.username, message.author.avatarURL)
+    .setAuthor(message.author.username, message.author.avatarURL())
     .setDescription('Özel mesajlarını kontrol et. :postbox:');
-    message.channel.sendEmbed(ozelmesajkontrol) }
-	const pingozel = new Discord.RichEmbed()
+    message.channel.send(ozelmesajkontrol) }
+    const pingozel = new Discord.MessageEmbed()
     .setColor(0x00AE86)
     .setTimestamp()
-    .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('Davet Linkini Yaz bu  https://discordapp.com/oauth2/authorize?client_id=514892660918583312&scope=bot&permissions=2146958847: ');
-    return message.author.sendEmbed(pingozel)
+    .setAuthor(message.author.username, message.author.avatarURL())
+    .setDescription('Davet Linkini Yaz bu  https://discord.com/oauth2/authorize?client_id=771736474777026630&scope=bot&permissions=805314622');
+    return message.author.send(pingozel)
 };
 
 exports.conf = {

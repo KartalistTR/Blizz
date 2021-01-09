@@ -120,7 +120,7 @@ return text;
         var lcelsius = Math.round(lowcelsius);
         var lfahrenheit = Math.round(lowfahrenheit);
 
-		const embed = new discord.RichEmbed()
+		const embed = new discord.MessageEmbed()
     .setTitle(json.name + ','   + sys.country +   ' için Hava Durumu')
     .setThumbnail('http://openweathermap.org/img/w/' + weather.icon + '.png')
     .setColor(0xff7f00)
@@ -130,13 +130,13 @@ return text;
     .addField('Bulut Oranı', '**%' + clouds.all + '**', inline=true)
     .addField('Hava Koşulları', 'Mevcut Sıcaklık: **' + ccelsius + ' °C / ' + cfahrenheit + ' °F**\nEn Yüksek Sıcaklık: **' + hcelsius + ' °C / ' + hfahrenheit + ' °F**\nEn Düşük Sıcaklık: **' + lcelsius + ' °C / ' + lfahrenheit + ' °F**\nNem: **%' + main.humidity + '**\nBarometrik Basınç: **' + main.pressure + '**', inline=true)    //.addField('Güneş', 'Gündoğumu: **' + UnixToDate(sys.sunrise)[1] + '**\nGünbatımı: **' + UnixToDate(sys.sunset)[1] + '**', inline=true)
     .addField('Güneş','Gündoğumu: **' + UnixToDate(sys.sunrise) + '**\nGünbatımı: **' + UnixToDate(sys.sunset) + '**',inline=true)
-    return message.channel.sendEmbed(embed);
+    return message.channel.send(embed);
 }
 catch (e) {
-    const error = new discord.RichEmbed()
+    const error = new discord.MessageEmbed()
     .setColor(0xff7f00)
     .setDescription('Bir hata ile karşılaştık : \n`' + e.message + '`')
-    return message.channel.sendEmbed(error);
+    return message.channel.send(error);
 }
     };
 

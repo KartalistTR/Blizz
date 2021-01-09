@@ -21,6 +21,6 @@ module.exports = client => {
 
         var random = Math.floor(Math.random()*(oyun.length-0+1)+0);
 
-        client.user.setGame(oyun[random], "https://www.twitch.tv/fredeski27");
+        client.user.setActivity(oyun[random], "https://www.twitch.tv/fredeski27");
         }, 2 * 2500);
 }
