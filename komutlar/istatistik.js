@@ -6,7 +6,6 @@ exports.run = (client, msg) => {
   const duration = moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]");
 const izex = new Discord.MessageEmbed()
 .setColor("#fffff")
-.setFooter("tarafından istendi",`msh`)//abin koder jkgerdhtrj
   .addField("= İSTATİSTİKLER =",`**
 • Bellek kullanımı => ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB
 • Çalışma süresi   => ${duration}
