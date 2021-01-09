@@ -14,7 +14,7 @@ module.exports = client => {
         "Developer by Yusuf Talha",
         "Çalan piçtir piç",  
         "",               
-        "g!yardım 🔥 + g!davet 🔥 +  g!ailemiz"
+        ""
     ];
 
     setInterval(function() {
