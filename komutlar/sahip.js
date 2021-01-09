@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-    let serverembed = new Discord.RichEmbed()
+    let serverembed = new Discord.MessageEmbed()
     .setDescription("**:chicken: Sahip komutları**")
     .setColor("#15f153")
     .addField("+eval", "Kod dener")
@@ -25,3 +25,4 @@ exports.help = {
   description: 'Bütün sahip komutlarını verir.',
   usage: 'sahip'
 };
+//izexlesh

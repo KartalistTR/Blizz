@@ -32,3 +32,4 @@ exports.help = {
   description: 'İstediğiniz Kişiye sarılırsınız.',
   usage: 'sarıl'
 };
+//izexlesh

@@ -55,3 +55,4 @@ exports.help = {
   description: 'Sureli Susturur.',
   usage: 'geçici-sustur [Kullanıcı] [Süre]'
 };
+//izexlesh

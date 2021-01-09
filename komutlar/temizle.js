@@ -23,3 +23,4 @@ exports.help = {
   description: 'Belirlenen miktar mesajı siler.',
   usage: 'temizle <temizlenecek mesaj sayısı>'
 };
+//izexlesh

@@ -35,3 +35,4 @@ exports.help = {
   description: 'İstediğiniz bir komutu devre dışı bırakır.',
   usage: 'unload <komut adı>'
 };
+//izexlesh

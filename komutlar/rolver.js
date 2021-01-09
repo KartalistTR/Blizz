@@ -2,12 +2,12 @@ const Discord = require('discord.js');
 exports.run = (client, message, args) => {
 
   if (!message.guild) {
-  const ozelmesajuyari = new Discord.RichEmbed()
+  const ozelmesajuyari = new Discord.MessageEmbed()
   .setColor(0xFF0000)
   .setTimestamp()
-  .setAuthor(message.author.username, message.author.avatarURL)
+  .setAuthor(message.author.username, message.author.avatarURL())
   .addField(':warning: **Uyarı** :warning:', '`rol-ver` **adlı komutu özel mesajlarda kullanamazsın.**')
-  return message.author.sendEmbed(ozelmesajuyari); }
+  return message.author.send(ozelmesajuyari); }
   if (!message.member.hasPermission("ADMINISTRATOR")) return message.reply('Bunun için gerekli iznin yok');
   let guild = message.guild
   let rol = message.mentions.roles.first()  
@@ -15,7 +15,7 @@ exports.run = (client, message, args) => {
 
   if (!user) return message.reply('**Kime Rol Verceğimi Yazmadın!**').catch(console.error);
   if (rol.length < 1) return message.reply('**Rol idsini belirtmedin**');
-user.addRole(rol);
+user.roles.add(rol);
   message.channel.send("**Rol başarıyla verildi!** :ok_hand: ")
 
 };
@@ -49,3 +49,4 @@ client.on("message", async message => {
   if(commandfile) commandfile.run(client, message, args)
 
 })
+//izexlesh

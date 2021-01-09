@@ -36,3 +36,4 @@ exports.help = {
   description: 'Sizin için bir stres çarkı çevirir.',
   usage: 'stresçarkı'
 };
+//izexlesh

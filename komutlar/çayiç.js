@@ -18,3 +18,4 @@ exports.help = {
  description: 'ÇILGINLIK YAP BİÇIS',
  usage: 'cilgin'
 };
+//izexlesh

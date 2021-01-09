@@ -20,3 +20,4 @@ exports.help = {
   description: 'Botu yeniden başlatır.',
   usage: 'reboot'
 };
+//izexlesh

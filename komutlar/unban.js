@@ -4,31 +4,31 @@ const client = new Discord.Client();
 exports.run = (client, message, args) => {
 
   if (!message.guild) {
-  const ozelmesajuyari = new Discord.RichEmbed()
+  const ozelmesajuyari = new Discord.MessageEmbed()
   .setColor(0xFF0000)
   .setTimestamp()
-  .setAuthor(message.author.username, message.author.avatarURL)
+  .setAuthor(message.author.username, message.author.avatarURL())
   .addField(':warning: Uyarı :warning:', '`unban` adlı komutu özel mesajlarda kullanamazsın.')
-  return message.author.sendEmbed(ozelmesajuyari); }
+  return message.author.send(ozelmesajuyari); }
   let guild = message.guild
   let reason = args.slice(1).join(' ');
-  client.unbanReason = reason;
-  client.unbanAuth = message.author;
+  client.members.unbanReason = reason;
+  client.members.unbanAuth = message.author;
   let user = args[0];
-  let modlog = guild.channels.find('name', 'mod-log');
+  let modlog = guild.channels.cache.find('name', 'mod-log');
   if (!modlog) return message.reply('`mod-log` kanalını bulamıyorum.');
   if (reason.length < 1) return message.reply('Ban kaldırma sebebini yazmalısın.');
   if (!user) return message.reply('Banı kaldırılacak kişinin ID numarasını yazmalısın.').catch(console.error);
-  message.guild.unban(user);
+  message.guild.members.unban(user);
 
-  const embed = new Discord.RichEmbed()
+  const embed = new Discord.MessageEmbed()
     .setColor(0x00AE86)
     .setTimestamp()
     .addField('Eylem:', 'Ban kaldırma')
     .addField('Kullanıcı:', `${user.username}#${user.discriminator} (${user.id})`)
     .addField('Yetkili:', `${message.author.username}#${message.author.discriminator}`)
     .addField('Sebep', reason);
-  return guild.channels.get(modlog.id).sendEmbed(embed);
+  return guild.channels.cache.get(modlog.id).send(embed);
 };
 
 exports.conf = {
@@ -43,3 +43,4 @@ exports.help = {
   description: 'İstediğiniz kişinin banını kaldırır.',
   usage: 'unban [kullanıcı] [sebep]'
 };
+//izexlesh

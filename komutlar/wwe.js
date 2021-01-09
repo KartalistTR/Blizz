@@ -6,10 +6,10 @@ module.exports.run = async (bot, message, args) => {
 
     let result = Math.floor((Math.random() * replies.length));
 
-    let gifembed = new Discord.RichEmbed()
+    let gifembed = new Discord.MessageEmbed()
         .setTitle("Gifiniz")
         .setColor("#FF69B4")
-        .setFooter(`Gifiniz ${message.author.tag} `, message.author.avatarURL)
+        .setFooter(`Gifiniz ${message.author.tag} `, message.author.avatarURL())
         .setImage(replies[result]);
 
     message.channel.send(gifembed);
@@ -26,4 +26,5 @@ exports.help = {
   name: 'wwegif',
   description: 'Rastgele wwe gifi atar.',
   usage: 'wwegif'
-}; 
+};
+//izexlesh

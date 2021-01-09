@@ -4,7 +4,7 @@ const Cleverbot = require('cleverbot-node');
 const clbot = new Cleverbot;
 
 exports.run = (client, message, args) => {
-	talkedRecently.add(message.author.id);
+    talkedRecently.add(message.author.id);
   setTimeout(() => {
     talkedRecently.delete(message.author.id);
   }, 2500);
@@ -31,3 +31,4 @@ exports.help = {
   description: 'Soru sormaya yarar.',
   usage: 'sor <soru>'
 };
+//izexlesh

@@ -7,11 +7,11 @@ exports.run = (client, message, args) => {
               '**Kullanıcı Ve Eğlence**\n\n\n  **`g!`8ball = Sorularınızı Yanıtlar** \n **`g!`aşkölçer = Aşkınızı Ölçer.** \n **`g!`çekiç = Çekiç Atarsınız.** \n  **`g!`çayiç = Çay İçersiniz **\n **`g!`döviz = Dövizlere Bakarsınız** \n **`g!`wwegif = Rast Gele Gif Gonderır** \n **`g!`çekiliş = Sunucunuzda Çekiliş Yaparsınız** \n **`g!`mcödül = Ödül Kazanarsınız ** \n **`g!`dcnitro = Avatarınıza Nıtro Ekler** \n **`g!`stresçarkı = Stres Atarsınız ** \n **`g!`invert = Avatarınızın Rengini Ters Renk Yapar** \n **`g!`wasted = Avatarınıza Wasted Effekti Yapar** \n **`g!`top10 = Botun 10 Sunucuda Ne Yaptıgını Gosterır** \n **`g!`yaz = Bota Bir Sey Yazarsınız** \n ',
               '**Müzik**\n\n\n' + '``-``  .oynat = Youtubeda İstediğiniz Bir Şarkıyı Aratır Ve Oynatır. \n``-``  .duraklat = Oynatılan Şarkıyı Devam Etmek Üzere Durdurur. \n``-``  .devamet = Duraklatılan Şarkıyı Devam Ettir. \n``-``  .geç = Oynatılan Şarkıyı Geçer. \n``-``  .kuyruk = Kuyruk’ta Olan Müzikleri Gösterir. \n``-``  .çalan = Oynatılan Müziği Gösterir. \n``-``  .ses = Ses Seviyesini Ayarlarsınız.',
               '**Çerçeve/Profil**\n\n\n ' + '``-``  .hacked = Profilinize ``hacked`` Efekti Verir. \n``-``  .triggered = Profilinize ``triggered`` Efekti Verir. \n``-``  .wasted = Profilinize ``wasted`` Efekti Verir. \n``-``  .winner = Profilinize ``winner`` Efekti Verir. \n``-``  .sniper = Profilinize ``sniper`` Efekti Verir. \n``-``  .hpbalance = Profilinize ``hypesquad balance`` Efekti Verir. \n``-``  .hpbravery = Profilinize ``hypesquad bravery`` Efekti Verir. \n``-``  .hpbrilliance = Profilinize ``hypesquad brilliance`` Efekti Verilir. \n``-``  .dcbughunter = Profilinize ``bug hunter`` Efekti Verir. \n``-``  .hpevent = Profilinize ``hypesquad`` Efekti Verir. \n``-``  .dcpartner = Profilinize ``partner`` Efekti Verir. \n``-``  .dcstaff = Profilinize ``staff`` Efekti Verir. \n``-``  .atatürk = Profilinize ``atatürk`` Efekti Verir.',
-              '**Bot Bilgi**\n\n\n' + '``-``  .davet = Bot İle İlgili Bağlantıları Görürsünüz. \n``-``  .ping = Botun Pingini Gösterir. \n``-``  .istatistik = Bo n İstatistiklerini Gösterir.',
+              '**Bot Bilgi**\n\n\n' + '``-``  .davet = Bot İle İlgili Bağlantıları Görürsünüz. \n``-``  .ws.ping = Botun Pingini Gösterir. \n``-``  .istatistik = Bo n İstatistiklerini Gösterir.',
               ];
   let page = 1;
 
-  const embed = new Discord.RichEmbed()
+  const embed = new Discord.MessageEmbed()
     .setColor('RANDOM')
     .setThumbnail('https://cdn.discordapom/attachments/487719679868272689/488329963926192158/image0.png')
     .setFooter(`Sayfa ${page} / ${pages.length}`)
@@ -63,3 +63,4 @@ name: 'yardım',
 description: 'Yardım Listesini Gösterir',
 usage: 'yardım'
 };
+//izexlesh
