@@ -11,8 +11,8 @@ module.exports = client => {
   client.user.setStatus("online");
    var oyun = [
         "Blitz | Discord Bot",
-        "Kartalist#8096",
-        "Çalan piçtir piç",  
+        "Kartalist#8960 | Yapımcım",
+        "Discord Destek İçin +destek",  
         "",               
         ""
     ];
