@@ -10,8 +10,8 @@ module.exports = client => {
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] BOT: ${client.user.username} ismi ile giriş yapıldı!`);
   client.user.setStatus("online");
    var oyun = [
-        "Developer by izexlesh",
-        "Developer by Yusuf Talha",
+        "Blitz | Discord Bot",
+        "Kartalist#8096",
         "Çalan piçtir piç",  
         "",               
         ""
