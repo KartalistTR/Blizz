@@ -104,7 +104,7 @@ exports.run = async (client, msg, args) => {
     ]
       let member = msg.mentions.members.first()
      if(!member)return msg.channel.send({embed: {
-   color: Math.floor(Math.random() * (0xFFFFFF + 1)),
+   color: ("RANDOM"),
    description: ('🚫 Kimi Seviyorsun?')
   }});
 
@@ -112,7 +112,7 @@ exports.run = async (client, msg, args) => {
 
     else{
     msg.channel.send({embed: {
-   color: Math.floor(Math.random() * (0xFFFFFF + 1)),
+      color: ("RANDOM"),
    description: (`${member} ${ask[Math.floor(Math.random() * 30)]}.`)
     }})
     }

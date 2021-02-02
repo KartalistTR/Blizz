@@ -13,8 +13,8 @@ module.exports = client => {
         "Blitz | Discord Bot",
         "Kartalist#8960 | Yapımcım",
         "Discord Destek İçin +destek",  
-        "",               
-        ""
+        "Davet Etmek İçin +davet",               
+        "Prefixim : +"
     ];
 
     setInterval(function() {
